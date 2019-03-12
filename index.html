@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Canonical webteam" />
+    <title>Canonical Ubuntu Advantage</title>
+    <link rel="shortcut icon" href="https://assets.ubuntu.com/v1/0843d517-favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-1.8.1.min.css" />
+    <style>
+      .post-token {
+        display: none !important;
+      }
+      :target .post-token {
+        display: block !important;
+      }
+      :target .pre-token {
+        display: none !important;
+      }
+      .p-code-snippet__input {
+        color: #111 !important;
+      }
+    </style>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-1018242-59', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <header id="navigation" class="p-navigation">
+      <div class="row">
+        <div class="p-navigation__banner">
+          <div class="p-navigation__logo">
+            <a class="p-navigation__link" href="#">
+              <img class="p-navigation__image" src="https://assets.ubuntu.com/v1/5d6da5c4-logo-canonical-aubergine.svg" alt="Canonical logo" width="100">
+            </a>
+          </div>
+        </div>
+        <nav class="p-navigation__nav" role="menubar">
+          <span class="u-off-screen">
+            <a href="#main-content">Jump to main content</a>
+          </span>
+        </nav>
+      </div>
+    </header>
+
+    <div id="main-content">
+      <section class="p-strip is-deep" id="token">
+        <div class="row">
+          <div class="col-8">
+            <h1>Canonical Ubuntu Advantage</h1>
+            <p>Personal users of Ubuntu can subscribe three machines (laptop, server or cloud) free of charge. Canonical's customers are entitled to use the service on every system for which a <a href="https://www.ubuntu.com/support">Ubuntu Advantage</a> is active, including those covered by an Ubuntu Advantage enterprise support agreement (Essential, Standard, or Advanced).</p>
+            <p>If you need Ubuntu Advantage on more machines, please <a href="https://buy.ubuntu.com/">visit our shop</a>.</p>
+          </div>
+          <div class="col-4 u-hide--small">
+            <img src="https://assets.ubuntu.com/v1/60d9b81e-picto-canonical.svg" alt="" width="200">
+          </div>
+        </div>
+
+        <div class="row pre-token">
+          <div class="col-8">
+            <p>By getting your token you are agreeing to the <a href="https://www.ubuntu.com/uasd">Ubuntu Advantage Terms of Service</a>.</p>
+            <a href="#token" class="p-button--positive">Get your Ubuntu Advantage token</a>
+          </div>
+        </div>
+
+        <div class="row post-token">
+          <div class="col-8">
+            <p><label for="ua-token">The key for your <strong>{{ USER_EMAIL }}</strong> account is:</label></p>
+            <div class="p-code-snippet">
+              <input type="text" id="ua-token" class="p-code-snippet__input" value="{{ USER_UA_TOKEN }}" readonly="readonly">
+              <button class="p-code-snippet__action">Copy to clipboard</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="p-footer">
+        <div class="row">
+          <p style="max-width: none;">&copy; 2019 Canonical Ltd. Ubuntu and Canonical are registered trademarks of Canonical Ltd.</p>
+          <nav class="p-footer__nav">
+            <ul class="p-footer__links">
+              <li class="p-footer__item">
+                <a class="p-footer__link" href="https://www.ubuntu.com/legal">Legal information</a>
+              </li>
+              <li class="p-footer__item">
+                <a class="p-footer__link" href="{{ ENTER_REPO_ISSUE_LINK }}">Report a bug</a>
+              </li>
+            </ul>
+            <span class="u-off-screen">
+              <a href="#">Go to the top of the page</a>
+            </span>
+          </nav>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
