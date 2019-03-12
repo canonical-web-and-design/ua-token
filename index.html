@@ -53,32 +53,35 @@
     </header>
 
     <div id="main-content">
-      <section class="p-strip is-deep" id="token">
-        <div class="row">
+      <section class="p-strip u-no-padding--bottom">
+        <div class="row u-equal-height">
           <div class="col-8">
             <h1>Canonical Ubuntu Advantage</h1>
-            <p>Personal users of Ubuntu can subscribe three machines (laptop, server or cloud) free of charge. Canonical's customers are entitled to use the service on every system for which a <a href="https://www.ubuntu.com/support">Ubuntu Advantage</a> is active, including those covered by an Ubuntu Advantage enterprise support agreement (Essential, Standard, or Advanced).</p>
-            <p>If you need Ubuntu Advantage on more machines, please <a href="https://buy.ubuntu.com/">visit our shop</a>.</p>
+            <p>Personal users of Ubuntu can subscribe three machines (laptop, server or cloud) free of charge. Canonical's customers are entitled to use the service on every system for which a <a href="https://www.ubuntu.com/support" class="p-link--external">Ubuntu Advantage</a> is active, including those covered by an Ubuntu Advantage enterprise support agreement (Essential, Standard, or Advanced).</p>
+            <p>If you need Ubuntu Advantage on more machines, please <a href="https://buy.ubuntu.com/" class="p-link--external">visit our shop</a>.</p>
           </div>
-          <div class="col-4 u-hide--small">
+          <div class="col-4 u-hide--small u-vertically-center u-align--center">
             <img src="https://assets.ubuntu.com/v1/60d9b81e-picto-canonical.svg" alt="" width="200">
           </div>
         </div>
+      </section>
 
+      <section class="p-strip" id="token">
         <div class="row pre-token">
           <div class="col-8">
-            <p>By getting your token you are agreeing to the <a href="https://www.ubuntu.com/uasd">Ubuntu Advantage Terms of Service</a>.</p>
+            <p>By getting your token you are agreeing to the <a href="https://www.ubuntu.com/uasd" class="p-link--external">Ubuntu Advantage Terms of Service</a>.</p>
             <a href="#token" class="p-button--positive">Get your Ubuntu Advantage token</a>
           </div>
         </div>
 
         <div class="row post-token">
           <div class="col-8">
-            <p><label for="ua-token">The key for your <strong>{{ USER_EMAIL }}</strong> account is:</label></p>
+            <p><label for="ua-token">The token for your <strong>{{ USER_EMAIL }}</strong> account is:</label></p>
             <div class="p-code-snippet">
               <input type="text" id="ua-token" class="p-code-snippet__input" value="{{ USER_UA_TOKEN }}" readonly="readonly">
               <button class="p-code-snippet__action">Copy to clipboard</button>
             </div>
+            <p><a href="/logout/">Log in with a different account&nbsp;&rsaquo;</a>
           </div>
         </div>
       </section>
